@@ -10,3 +10,20 @@ Boutique : matthieugras.com/boutique
 Contact : matthieugras.com/contact
 login : matthieugras.com/login
 Admin : matthieugras.com/admin
+
+
+Pages publiques:
+Accueil
+Boutique
+Prestations
+Login
+Portfolios
+
+Pages Privées: 
+Mon compte
+Mon Panier
+Pages de paiement
+
+Pannel admin:
+Page d'identification
+Page de modification du site (Accueil, portfolio, prestation, contact)
