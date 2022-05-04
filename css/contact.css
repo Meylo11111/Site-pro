@@ -1,6 +1,4 @@
-.body{
-  font-family: 'itc-avant-garde-gothic';
-}
+
 ul {
   display: flex;
   justify-content: space-between;
@@ -30,35 +28,20 @@ li a:hover {
   text-align: bottom;
 }
 
+
+li a img{
+
+}
 img#logo{
   width : 50px;
   height : 50px;
-  
-
-}
-  img#home{
-    width:1514px;
-    height: 684px;
-    margin-left: 0%;
 }
 
-.contenant {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.texte_centrer {
-  position: absolute;
-  top: 20%;
-  left: 34%;
-  transform: translate(-50%, -50%);
-}
 img#Panier{
-  width : 41px;
-  height : 49px;
-}
-img#login{
-  width : 43px;
-  height : 51px;
-}
+    width : 41px;
+    height : 49px;
+  }
+  img#login{
+    width : 43px;
+    height : 51px;
+  }
