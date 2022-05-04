@@ -31,17 +31,15 @@ ul {
   h1{
     color:rgb(0, 0, 0);
     text-align: center;
-    margin-right: 10%;
-    font-size: 60px;
+    font-size: 64px;
     font-family: 'Spartwell';
   }
   h2{
     color:rgb(0, 0, 0);
     text-align: center;
-    margin-right: 10%;
-    font-size: 24px;
+    font-size: 27px;
     font-style: bold;
-    font-family: 'Spartwell';
+
   }
 
   input[type=submit] {
@@ -54,9 +52,10 @@ ul {
     margin: auto;
   }
 
-  p{
+  .pa{
     font-size: 24px;
     text-align: center;
+   
   }
 
   h3{
@@ -68,4 +67,14 @@ ul {
     text-align:center;
     margin: auto;
     display: flex;
+  }
+
+  .pres{
+      display: flex;
+      justify-content: center;
+  }
+
+  .margin{
+    max-width: 1296px;
+    margin: auto;
   }
