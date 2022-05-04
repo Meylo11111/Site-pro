@@ -1,3 +1,64 @@
-nav #nav-wrapper{
-    background-color: azure;
+.body{
+  font-family: 'itc-avant-garde-gothic';
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  position: center;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: bottom;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  text-align: bottom;
+}
+
+img#logo{
+  width : 50px;
+  height : 50px;
+  
+
+}
+  img#home{
+    width:1514px;
+    height: 684px;
+    margin-left: 0%;
+}
+
+.contenant {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.texte_centrer {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+}
+img#Panier{
+  width : 41px;
+  height : 49px;
+}
+img#login{
+  width : 43px;
+  height : 51px;
 }
