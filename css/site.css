@@ -26,8 +26,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
   text-align: bottom;
+  font-weight: bold;
 }
 
 img#logo{
@@ -37,8 +37,8 @@ img#logo{
 
 }
   img#home{
-    width:1514px;
-    height: 684px;
+    width:1895px;
+    height: 879px;
     margin-left: 0%;
 }
 

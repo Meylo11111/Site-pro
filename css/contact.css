@@ -1,4 +1,6 @@
-
+body{
+    margin: 0px;
+}
 ul {
   display: flex;
   justify-content: space-between;
@@ -19,18 +21,12 @@ li a {
   display: block;
   color: black;
   text-align: bottom;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
-  text-align: bottom;
-}
-
-
-li a img{
-
+    text-align: bottom;
+    font-weight: bold;
 }
 img#logo{
   width : 50px;
@@ -41,7 +37,52 @@ img#Panier{
     width : 41px;
     height : 49px;
   }
-  img#login{
+img#login{
     width : 43px;
     height : 51px;
   }
+
+  img#home{
+    width:1895px;
+    height: 879px;
+    margin-left: 0%;
+}
+
+    img#nude{
+        width:2300px;
+        height: 1800px;
+        margin-left: 0%;
+    }
+.contenant {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+      
+.texte_centrer {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    }
+
+#prenom{
+    position: absolute;
+    left: 1000px;
+}
+
+#nom{
+    position: absolute;
+    left: 1250px;
+}
+
+#email{
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+}
+#request{
+    left: 1000px;
+    top: 4000px;
+
+}
