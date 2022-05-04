@@ -28,10 +28,10 @@
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
-                                        echo "<td>" . $row['id'] . "</td>";
-                                        echo "<td>" . $row['name'] . "</td>";
-                                        echo "<td>" . $row['address'] . "</td>";
-                                        echo "<td>" . $row['salary'] . "</td>";
+                                        echo "<td>" . $row['ID'] . "</td>";
+                                        echo "<td>" . $row['Identifiant'] . "</td>";
+                                        echo "<td>" . $row['Mot de Passe'] . "</td>";
+                                        echo "<td>" . $row['Statut'] . "</td>";
                                         echo "<td>";
                                             echo '<a href="read.php?id='. $row['id'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
                                             echo '<a href="update.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
@@ -53,5 +53,6 @@
                     // Close connection
                     mysqli_close($link);
                     ?>
+                    <a href="Create.php">Create</a>
 </body>
 </html>
