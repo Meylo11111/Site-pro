@@ -1,0 +1,288 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  img#logo{
+    width : 50px;
+    height : 50px;
+  
+  }
+
+  .pos{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 549px;
+    top: 73px;
+    
+  }
+  .pos2{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 995px;
+    top: 73px;
+  }
+  .pos3{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 1441px;
+    top: 73px;
+
+  }
+.pos4{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 549px;
+    top: 510px;
+}
+.pos5{
+
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 995px;
+    top: 510px;
+}
+.pos6{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 1441px;
+    top: 510px;
+}
+
+
+.t1{
+    position: absolute;
+width: 362px;
+height: 27px;
+left: 549px;
+top: 437px;
+
+font-family: 'ITC Avant Garde Gothic Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.t2{
+    position: absolute;
+    width: 362px;
+    height: 27px;
+    left: 995px;
+    top: 437px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+.t3{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 1441px;
+    top: 437px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+.t4{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 549px;
+    top: 874px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+}
+
+.t5{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 995px;
+    top: 874px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+.t6{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 1441px;
+    top: 874px;
+
+font-family: 'ITC Avant Garde Gothic Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.d1{
+    position: absolute;
+width: 362px;
+height: 78px;
+left: 549px;
+top: 457px;
+
+font-family: 'ITC Avant Garde Gothic Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+
+.d2{
+    position: absolute;
+    width: 362px;
+    height: 78px;
+    left: 995px;    
+    top: 457px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+}
+
+.d3{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 1441px;
+    top: 457px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+.d4{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 549px;
+    top: 894px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+.d5{
+
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 995px;
+    top: 894px;
+    
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+}
+
+.d6{
+    position: absolute;
+    width: 303px;
+    height: 372px;
+    left: 1441px;
+    top: 894px;
+
+font-family: 'ITC Avant Garde Gothic Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.menub{
+    position: absolute;
+width: 132px;
+height: 151px;
+left: 86px;
+top: 313px;
+
+font-family: 'Breadley Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+
+color: #000000;
+}
