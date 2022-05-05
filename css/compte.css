@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 27px;
+    padding-top: 27px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+    position: center;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: bottom;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    /* font-weight: bold; */
+  }
+  
+  li a:hover {
+    text-align: bottom;
+    font-weight: bold;
+  }
+  
+  img#logo{
+    width : 75px;
+    height : 50px;
+  }
+  img#Panier{
+    width : 41px;
+    height : 49px;
+  }
+  img#login{
+    width : 43px;
+    height : 51px;
+  }
+  
+
+.vertical { 
+
+    } 
+
+.info{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.card{
+    display: flex;
+    align-items: flex-start;
+}
+.mots{
+    font-size: 22px;
+    padding-left: 75px;
+}
+.titre{
+    font-family: 'Spartwell';
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+.voila{
+    display: flex;
+    align-items: flex-start;
+}
+.info{
+    width: 400px;
+}
+.image{
+    flex-wrap: wrap;
+    align-items: center;
+    gap:  50px;
+}
+.photo{
+    width: 400px;
+    height: 500px;
+    padding: 0px;
+}
