@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link href="http://fonts.cdnfonts.com/css/spartwell" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
-    <ul>
-        <li><a href="https://matthieugras.com/" target="_blank" rel="nofollow"><img id="logo" src="images/logo.png" alt="logo Matthieu Gras"></a></li>
-        <li><a class="active" href="#home">Accueil</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#prestation">Prestation</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#panier"><img id="Panier" src="images/shopping-bag.png" alt="Panier de shopping"></a></li>
-        <li><a href="#compte"><img id="login" src="images/compte.png" alt="Compte"></a></li>
+    <header>
+        <ul>
+            <li><a href="https://matthieugras.com/" target="_blank" rel="nofollow"><img id="logo" src="images/logo.png" alt="logo Matthieu Gras"></a></li>
+            <li><a class="active" href="site.html">acceuil</a></li>
+            <li><a href="slideshow.html">portfolio</a></li>
+            <li><a href="prestation.html">prestation</a></li>
+            <li><a href="boutique.html">boutique</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#panier"><img id="Panier" src="images/shopping-bag.png" alt="Panier de shopping"></a></li>
+            <li><a href="#compte"><img id="login" src="images/compte.png" alt="Compte"></a></li>
+        </ul>
+    </header>
+<div>
+  <div class="container">
+    
+    <form action="action_page.php">
+        <h1>Contactez-moi</h1>
+        
+        <div class="align">
+            <div class="conct">
+                <label for="fname">Prénom*</label>
+                <input type="text" id="fname" name="firstname">
+            </div>
+            <div class="conct">
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lastname">
+            </div>  
+        </div>
 
+<<<<<<< HEAD
       </ul>
 
       <div class="contenant">
@@ -32,5 +58,44 @@
         </div>
         </div>
       </div>
+=======
+    <div>
+      <label for="lname">Mail*</label>
+      <input type="text" id="mail" name="mail">
+    </div>
+
+    <div class="conct">
+        <label for="lname">Objet*</label>
+        <input  type="text" id="objet" name="objet">
+    </div>
+
+    <div>
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" style="height:200px"></textarea>
+      <input type="submit" value="Envoyer">
+    </div>
+
+    </form>
+</div>
+
+    <div class="reseau">
+        <div class="align">  
+          <a href="https://www.instagram.com/accounts/login/?next=/matt.pty/"><img id="instagram" src="images/insta.png" alt="instagram"></a>
+          <p>@matt.pty</p>
+      </div>
+      <div class="align">
+          <a href="https://twitter.com/mattptyy"><img id="twitter" src="images/twitter.png" alt="twitter"></a>
+          <p>@mattptyy</p>
+      </div>
+  </div>
+
+  
+
+
+
+
+  </div>
+</div>
+>>>>>>> a51e0e200c10069fccbae39975633f29d33ecf03
 </body>
 </html>

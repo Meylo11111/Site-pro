@@ -19,17 +19,23 @@ li {
 }
 
 li a {
+  
+  font-family: 'Didact Gothic', sans-serif;
   display: block;
   color: black;
   text-align: bottom;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 40px;
-  font-family: 'Dosis', sans-serif;
+ 
   /* font-weight: bold; */
 }
 
 li a:hover {
+<<<<<<< HEAD
+=======
+  font-weight: bold;
+>>>>>>> a51e0e200c10069fccbae39975633f29d33ecf03
   text-align: bottom;
   font-weight: bold;
 }
@@ -43,6 +49,15 @@ img#home{
     width:1920px;
     height: 883px;
     margin-left: 0%;
+}
+
+img#Panier{
+  width : 41px;
+  height : 49px;
+}
+img#login{
+  width : 43px;
+  height : 51px;
 }
 
 .contenant {

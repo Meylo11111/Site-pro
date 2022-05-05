@@ -1,45 +1,80 @@
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  position: center;
+}
+
+li a {
+  font-family: 'Didact Gothic', sans-serif;
+  display: block;
+  color: black;
+  text-align: bottom;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+ 
+  /* font-weight: bold; */
+}
+
+li a:hover {
+  background-color: rgb(143, 143, 143);
+  text-align: bottom;
+}
+
+img#logo{
+  width : 50px;
+  height : 50px;
   
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  img#logo{
-    width : 50px;
-    height : 50px;
-  
-  }
+
+}
+  img#home{
+    width:2200px;
+    height: 814px;
+}
+
+img#Panier{
+  width : 41px;
+  height : 49px;
+}
+img#login{
+  width : 43px;
+  height : 51px;
+}
   
   h1{
     color:rgb(0, 0, 0);
     text-align: center;
     font-size: 64px;
     font-family: 'Spartwell';
+    font-weight: normal;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
   h2{
     color:rgb(0, 0, 0);
     text-align: center;
     font-size: 27px;
     font-style: bold;
-
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
   }
 
   input[type=submit] {
@@ -55,9 +90,17 @@ ul {
   .pa{
     font-size: 24px;
     text-align: center;
-   
+    display: block;
+  
   }
 
+  p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
   h3{
       font-size: 20px;
       text-align: center;
@@ -78,3 +121,21 @@ ul {
     max-width: 1296px;
     margin: auto;
   }
+
+  .button{
+    background-color: #E89676;
+    color: white;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+
+    text-decoration: none;
+      font-family: 'Spartwell';
+  }
+
+.marg{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}

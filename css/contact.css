@@ -1,13 +1,16 @@
+<<<<<<< HEAD
 body{
     margin: 0px;
 }
+=======
+>>>>>>> a51e0e200c10069fccbae39975633f29d33ecf03
 ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 27px;
+  padding-top: 27px;
   overflow: hidden;
   background-color: white;
 }
@@ -18,22 +21,41 @@ li {
 }
 
 li a {
+  
+  font-family: 'Didact Gothic', sans-serif;
   display: block;
   color: black;
   text-align: bottom;
   text-decoration: none;
+  font-size: 40px;
+ 
+  /* font-weight: bold; */
 }
 
 li a:hover {
+<<<<<<< HEAD
     text-align: bottom;
     font-weight: bold;
 }
+=======
+  font-weight: bold;
+  text-align: bottom;
+}
+
+>>>>>>> a51e0e200c10069fccbae39975633f29d33ecf03
 img#logo{
   width : 50px;
   height : 50px;
+  
+
+}
+  img#home{
+    width:2200px;
+    height: 814px;
 }
 
 img#Panier{
+<<<<<<< HEAD
     width : 41px;
     height : 49px;
   }
@@ -86,3 +108,100 @@ img#login{
     top: 4000px;
 
 }
+=======
+  width : 41px;
+  height : 49px;
+}
+img#login{
+  width : 43px;
+  height : 51px;
+}
+
+body{
+  background-image: url(../images/contact.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#E89676;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  font-family: 'Spartwell';
+  font-size: 30px;
+
+}
+
+label{
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.00);
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+  max-width: 1800px;
+  margin: auto;
+  
+}
+
+h1{
+  display: flex;
+  justify-content: end;
+  margin-right: 90px;
+  font-size: 100px;
+  font-family: 'Spartwell';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152px;
+  color: #FFFFFF;
+
+}
+
+.reseau{
+  color: white;
+  font-size: 30px;
+  font-family: 'Didact Gothic', sans-serif;
+  margin-bottom: 100px;
+}
+
+.align{
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+  
+}
+
+form{
+  max-width: 900px;
+ width: 60%;
+}
+
+
+.conct{
+  width: 60%;
+}
+
+>>>>>>> a51e0e200c10069fccbae39975633f29d33ecf03
