@@ -6,8 +6,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 27px;
+  padding-top: 27px;
   overflow: hidden;
   background-color: white;
 }
@@ -23,10 +23,13 @@ li a {
   text-align: bottom;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  /* font-weight: bold; */
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(143, 143, 143);
   text-align: bottom;
 }
 
@@ -37,14 +40,13 @@ img#logo{
 
 }
   img#home{
-    width:1514px;
-    height: 684px;
-    margin-left: 0%;
+    width:2200px;
+    height: 814px;
 }
 
 .contenant {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   color: white;
 }
 
@@ -53,6 +55,10 @@ img#logo{
   top: 20%;
   left: 34%;
   transform: translate(-50%, -50%);
+  font-family: 'Dosis', sans-serif;
+  padding-left: 5%;
+  padding-right: 19%;
+  font-size:20px;
 }
 img#Panier{
   width : 41px;
