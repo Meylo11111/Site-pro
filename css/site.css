@@ -32,10 +32,6 @@ li a {
 }
 
 li a:hover {
-<<<<<<< HEAD
-=======
-  font-weight: bold;
->>>>>>> a51e0e200c10069fccbae39975633f29d33ecf03
   text-align: bottom;
   font-weight: bold;
 }
