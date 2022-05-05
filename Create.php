@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $Identifiant = $Input_identifiant;
     }
     
-    // Validate address
+    // Entrer mot de passe
     $input_mdp = trim($_POST["Mot de passe"]);
     if(empty($input_mdp)){
         $mdp_err = "Entrez votre mot de passe";     
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $mdp = $input_mdp;
     }
     
-    // Validate salary
+    // Confirmer mot de passe
     $input_mdp_conf = trim($_POST["Confirmez votre mot de passe"]);
     if(empty($input_mdp_conf)){
         $mdp_conf_err = "Confirmez votre mot de passe";     
@@ -39,7 +39,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before inserting in database
     if(empty($Identifiant_err) && empty($mdp_err) && empty($salary_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO employees (Identifiant, Mot de Passe) VALUES (?, ?)";
+        if ($_POST["Mot de passe"] === $_POST["Confirmez votre mot de passe"]) 
+        {
+            $sql = "INSERT INTO utilisateurs (Identifiant, Mot de Passe) VALUES ('Identifiant', 'Mot de Passe')";
+        }
+        
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -53,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records created successfully. Redirect to landing page
-                header("location: index.php");
+                header("location: site.html");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -92,25 +96,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group">
                             <label>Identifiant</label>
-                            <input type="text" name="Identifiant" class="form-control <?php echo (!empty($Identifiant_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $Identifiant; ?>">
-                            <span class="invalid-feedback"><?php echo $Identifiant_err;?></span>
+                            <input type="text" id="IdentifiantInput" name="Identifiant" class="form-control <?php echo (!empty($Identifiant_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $Identifiant; ?>">
+                            <span class="invalid-feedback" id="IdentifiantFeedback"><?php echo $Identifiant_err;?></span>
                         </div>
                         <div class="form-group">
                             <label>Mot de passe</label>
-                            <textarea name="Mor de Passe" class="form-control <?php echo (!empty($mdp_err)) ? 'is-invalid' : ''; ?>"><?php echo $mdp; ?></textarea>
-                            <span class="invalid-feedback"><?php echo $mdp_err;?></span>
-                        </div>
+                            <textarea name="Mot de Passe" id="mdpInput" class="form-control <?php echo (!empty($mdp_err)) ? 'is-invalid' : ''; ?>"><?php echo $mdp; ?></textarea>
+                            <span class="invalid-feedback" id="mdpFeedback"><?php echo $mdp_err;?></span>
+                        </div>  
                         <div class="form-group">
                             <label>Confirmez votre mot de passe</label>
-                            <input type="text" name="Mot de Passe confirmation" class="form-control <?php echo (!empty($mdp_conf_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $mdp_conf; ?>">
-                            <span class="invalid-feedback"><?php echo $mdp_conf_err;?></span>
+                            <input type="text" id="mdpconfInput" name="Mot de Passe confirmation" class="form-control <?php echo (!empty($mdp_conf_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $mdp_conf; ?>">
+                            <span class="invalid-feedback" id="mdpconfFeedback"><?php echo $mdp_conf_err;?></span>
                         </div>
-                        <input type="submit" class="btn btn-primary" value="Submit">
-                        <a href="index.php" class="btn btn-secondary ml-2">Cancel</a>
+                        <input type="submit" class="btn btn-primary" value="Envoyer">
+                        <a href="index.php" class="btn btn-secondary ml-2">Annuler</a>
                     </form>
                 </div>
             </div>        
         </div>
     </div>
 </body>
+<script src="Backoffice.js"></script>
 </html>
