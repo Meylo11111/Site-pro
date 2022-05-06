@@ -33,6 +33,10 @@ li a {
 }
 
 li a:hover {
+<<<<<<< HEAD
+  font-weight: bold;
+=======
+>>>>>>> d3056f20bc1c3744d189f493d89c8f75644e9b13
   text-align: bottom;
   font-weight: bold;
 }
