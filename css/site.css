@@ -218,7 +218,8 @@ input:checked + * + input:after {
 }
 
 input:checked + * + input + * ~ input:before,
-input:checked + * + input + * ~ input:after,{
+
+input:checked + * + input + * ~ input:after{
 	display: none;
 }
 
