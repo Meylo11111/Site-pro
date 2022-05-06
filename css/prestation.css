@@ -126,7 +126,7 @@ img#login{
   .button{
     background-color: #E89676;
     color: white;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(58, 58, 58, 0.25);
     border: none;
     padding: 15px;
     text-align: center;

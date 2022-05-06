@@ -34,6 +34,7 @@ li a {
 }
 
 li a:hover {
+  font-weight: bold;
   text-align: bottom;
   font-weight: bold;
 }
@@ -41,6 +42,7 @@ li a:hover {
 img#logo{
   width: 183px;
   height: 118px;
+  padding-left: 50px;
 }
 
 img#home{
