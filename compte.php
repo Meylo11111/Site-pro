@@ -31,16 +31,16 @@ echo($_SESSION["nom"])
 
 
 
-    <header>
-        <ul class="navbar">
+<header>
+        <ul>
             <li><a href="https://matthieugras.com/" target="_blank" rel="nofollow"><img id="logo" src="images/logo.png" alt="logo Matthieu Gras"></a></li>
-            <li><a class="active" href="site.html">Accueil</a></li>
-            <li><a href="slideshow.html">Portfolio</a></li>
-            <li><a href="prestation.html">Prestation</a></li>
-            <li><a href="boutique.html">Boutique</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#panier"><img id="Panier" src="images/shopping-bag.png" alt="Panier de shopping"></a></li>
-            <li><a href="compte.html"><img id="login" src="images/compte.png" alt="Compte"></a></li>
+            <li><a class="active navh" href="site.html">acceuil</a></li>
+            <li><a class="navh" href="slideshow.html">portfolio</a></li>
+            <li><a class="navh" href="prestation.html">prestation</a></li>
+            <li><a class="navh" href="boutique.html">boutique</a></li>
+            <li><a class="navh" href="contact.html">contact</a></li>
+            <li><a class="navh" href="panier.html"><img id="Panier" src="images/shopping-bag.png" alt="Panier de shopping"></a></li>
+            <li><a class="navh" href="login.php"><img id="login" src="images/compte.png" alt="Compte"></a></li>
         </ul>
     </header>
     
