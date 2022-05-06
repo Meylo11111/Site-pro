@@ -7,6 +7,7 @@ ul {
   padding-top: 27px;
   overflow: hidden;
   background-color: white;
+  text-transform: uppercase;
 }
 
 li {
@@ -20,6 +21,7 @@ li a {
   display: block;
   color: black;
   text-align: bottom;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 40px;
  
@@ -136,5 +138,9 @@ form{
 
 .conct{
   width: 60%;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> d3056f20bc1c3744d189f493d89c8f75644e9b13

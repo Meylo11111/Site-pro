@@ -7,23 +7,13 @@
     padding-top: 27px;
     overflow: hidden;
     background-color: white;
+    text-transform: uppercase;
   }
   
   li {
     float: left;
     position: center;
   }
-  
-  /* li a {
-    
-    font-family: 'Didact Gothic', sans-serif;
-    display: block;
-    color: black;
-    text-align: bottom;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 40px;
-  } */
   
   li a:hover {
     font-weight: bold;
@@ -92,6 +82,7 @@ font-weight: 400;
 font-size: 28px;
 line-height: 34px;
 color: #000000;
+
 }
 
 
