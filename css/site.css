@@ -26,8 +26,8 @@ li a {
   /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 40px;
-  padding-top: 46px;
-  padding-bottom: 46px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
  
   /* font-weight: bold; */
@@ -229,19 +229,19 @@ input:last-of-type:before {
 
 img{
   max-width: 100%;
-    max-height: 100%;
-    width: 100%;
+  max-height: 100%;
+  width: 100%;
 }
 
 .texte {
   color: rgb(255 255 255);
-    font-size: 23px;
-    padding: 92px;
-    z-index: 1;
-    position: absolute;
-    font-family: 'Quicksand', sans-serif;
-    margin-right: 47%;
-    text-align: justify;
+  font-size: 23px;
+  padding: 92px;
+  z-index: 1;
+  position: absolute;
+  font-family: 'Quicksand', sans-serif;
+  margin-right: 47%;
+  text-align: justify;
 }
 
 .texte2 {
@@ -251,7 +251,9 @@ img{
     z-index: 1;
     position: absolute;
     font-family: 'Quicksand', sans-serif;
-    margin-right: 47%;
+    margin-right: 20%;
+    margin-left: 455px;
     text-align: justify;
+    margin-top: 4%;
 }
 

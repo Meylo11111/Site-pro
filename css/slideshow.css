@@ -75,6 +75,24 @@
 .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
   opacity: 1;
 }
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__Carnival:nth-of-type(2) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
 .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
   transform: translateX(-200%);
 }
@@ -191,10 +209,17 @@
   right: 0;
   opacity: 1;
 }
+.carousel__track .carousel__Carnival {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
 .carousel__track .carousel__slide:nth-of-type(1) {
   transform: translateX(0%);
 }
-.carousel__track .carousel__slide:nth-of-type(2) {
+.carousel__track .carousel__Carnival:nth-of-type(2) {
   transform: translateX(100%);
 }
 .carousel__track .carousel__slide:nth-of-type(3) {
@@ -209,7 +234,16 @@
 .carousel--scale .carousel__slide {
   transform: scale(0);
 }
+.carousel--scale .carousel__Carnival {
+  transform: scale(0);
+}
 .carousel__slide {
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  opacity: 0;
+}
+.carousel__Carnival {
   height: 100%;
   position: absolute;
   overflow-y: auto;
@@ -223,6 +257,7 @@
 }
 html,
 body {
+  font-family: 'Spartwell';
   text-align: center;
   color: #fff;
 }
@@ -233,6 +268,10 @@ body {
   margin: 30px;
 }
 .carousel__slide {
+  overflow: hidden;
+  width: 100%;
+}
+.carousel__Carnival {
   overflow: hidden;
 }
 .carousel--thumb .carousel__indicator {
@@ -259,31 +298,195 @@ h3 {
 .carousel__indicator {
   background-color: #fafafa;
 }
-.carousel__slide:nth-of-type(1),
+
+/* Carousel 1 */
+
+.carousel--carnival .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("https://unsplash.it/300?random");
+  background-image: url("../images/Road.png");
   background-size: cover;
   background-position: center;
 }
-.carousel__slide:nth-of-type(2),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/600?random");
+.carousel--carnival .carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Carnival.png");
   background-size: cover;
   background-position: center;
 }
-.carousel__slide:nth-of-type(3),
+.carousel--carnival .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
   background-image: url("https://unsplash.it/900?random");
   background-size: cover;
   background-position: center;
 }
-.carousel__slide:nth-of-type(4),
+.carousel--carnival .carousel__slide:nth-of-type(4),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
   background-image: url("https://unsplash.it/1200?random");
   background-size: cover;
   background-position: center;
 }
-.carousel__slide:nth-of-type(5),
+.carousel--carnival .carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-image: url("https://unsplash.it/1500?random");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Carousel 2 */
+
+.carousel--translate .carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Carnival.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--translate .carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("../images/Road.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--translate .carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("https://unsplash.it/900?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--translate .carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("https://unsplash.it/1200?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--translate .carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-image: url("https://unsplash.it/1500?random");
+  background-size: cover;
+  background-position: center;
+}
+/* Carousel 3 */
+
+.carousel--Circy .carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Circy.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Circy .carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Carnival.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Circy .carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("https://unsplash.it/900?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Circy .carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("https://unsplash.it/1200?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Circy .carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-image: url("https://unsplash.it/1500?random");
+  background-size: cover;
+  background-position: center;
+}
+/* Carousel 4 */
+
+.carousel--Lagoon .carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Lagoon.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Lagoon .carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("../images/Carnival.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Lagoon .carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("https://unsplash.it/900?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Lagoon .carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("https://unsplash.it/1200?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Lagoon .carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-image: url("https://unsplash.it/1500?random");
+  background-size: cover;
+  background-position: center;
+}
+/* Carousel 5 */
+
+.carousel--Fire .carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Fire.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Fire .carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("../images/Carnival.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Fire .carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("https://unsplash.it/900?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Fire .carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("https://unsplash.it/1200?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Fire .carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-image: url("https://unsplash.it/1500?random");
+  background-size: cover;
+  background-position: center;
+}
+/* Carousel 6 */
+
+.carousel--Movie .carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../images/Movie.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Movie .carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("../images/Carnival.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Movie .carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("https://unsplash.it/900?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Movie .carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("https://unsplash.it/1200?random");
+  background-size: cover;
+  background-position: center;
+}
+.carousel--Movie .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
   background-image: url("https://unsplash.it/1500?random");
   background-size: cover;
@@ -291,7 +494,12 @@ h3 {
 }
 
 
-ul {
+
+
+
+
+
+.ulu {
   display: flex;
   justify-content: space-between;
   align-items: center;
