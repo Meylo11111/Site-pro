@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paiement.css">
+    <link rel="stylesheet" href="js/paiement.js">
+    <title>Document</title>
+</head>
+<body>
+
+  <form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Paiement Information</h1>
+      </div> <!-- end of personal-information -->
+           
+          <input id="column-left" type="text" name="first-name" placeholder="Prenom"/>
+          <input id="column-right" type="text" name="last-name" placeholder="Nom"/>
+          <input id="input-field" type="text" name="number" placeholder="Numero de la carte"/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+         
+          <div class="card-wrapper"></div>
+      
+          <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Adresse"/>
+          <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="Ville"/>
+          <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="Code postal"/>
+          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Mail"/>
+          <input id="input-button" type="submit" value="Payer"/>
+        
+    </form>
+  </div>
+
+</body>
+</html>

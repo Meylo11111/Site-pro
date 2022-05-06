@@ -26,6 +26,7 @@
     header("Location: login.php");
     exit(); 
   } 
+echo($_SESSION["nom"])
   ?>
 
 

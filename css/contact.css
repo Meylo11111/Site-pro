@@ -76,13 +76,13 @@ input[type=submit] {
   display: flex;
   justify-content: center;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 20px; 
   border: none;
   cursor: pointer;
   margin: auto;
   font-family: 'Spartwell';
   font-size: 30px;
-
+  box-shadow: inset 0px 4px 4px rgba(31, 31, 31, 0.25);
 }
 
 label{
@@ -120,7 +120,9 @@ h1{
   color: white;
   font-size: 30px;
   font-family: 'Didact Gothic', sans-serif;
-  margin-bottom: 100px;
+  position: absolute;
+  left: 60px;
+  top: 800px;
 }
 
 .align{
@@ -139,4 +141,7 @@ form{
 .conct{
   width: 60%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 13dde2a67ab20d094343451fe4e6066ef734946d
