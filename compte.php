@@ -23,9 +23,9 @@
     session_start();
     require_once('config.php');
     if(!isset($_SESSION["nom"])){
-    header("Location: login.php");
-    exit(); 
-  } 
+        header("Location: login.php");
+        exit(); 
+    } 
 echo($_SESSION["nom"])
   ?>
 
