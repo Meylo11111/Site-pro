@@ -9,18 +9,17 @@
 <body>
 <?php
                     require_once "config.php";
-                    
+
                     $sql = "SELECT * FROM utilisateurs";
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){
                             echo '<table class="table table-bordered table-striped">';
                                 echo "<thead>";
                                     echo "<tr>";
-                                        echo "<th>#</th>";
+                                        echo "<th>ID</th>";
                                         echo "<th>nom</th>";
                                         echo "<th>email</th>";
                                         echo "<th>type</th>";
-                                        echo "<th>password</th>";
                                         echo "<th>img</th>";
                                     echo "</tr>";
                                 echo "</thead>";
@@ -31,13 +30,7 @@
                                         echo "<td>" . $row['nom'] . "</td>";
                                         echo "<td>" . $row['email'] . "</td>";
                                         echo "<td>" . $row['type'] . "</td>";
-                                        echo "<td>" . $row['password'] . "</td>";
                                         echo "<td>" . $row['img'] . "</td>";
-                                        echo "<td>";
-                                            echo '<a href="read.php?id='. $row['id'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
-                                            echo '<a href="update.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
-                                            echo '<a href="delete.php?id='. $row['id'] .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
-                                        echo "</td>";
                                     echo "</tr>";
                                 }
                                 echo "</tbody>";                            
