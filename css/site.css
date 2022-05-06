@@ -97,7 +97,7 @@ button {
 
 .wrapper {
 	position: relative;
-	width: 1888px;
+	/* width: 1888px; */
   height: 793px;
 	overflow: hidden;
 	display: flex;
@@ -233,6 +233,17 @@ img{
 }
 
 .texte {
+  color: rgb(255 255 255);
+    font-size: 23px;
+    padding: 92px;
+    z-index: 1;
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 47%;
+    text-align: justify;
+}
+
+.texte2 {
   color: rgb(255 255 255);
     font-size: 23px;
     padding: 92px;
