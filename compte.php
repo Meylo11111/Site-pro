@@ -10,12 +10,26 @@
     <link href="http://fonts.cdnfonts.com/css/spartwell" rel="stylesheet">
 
     <title>Mathhieu Gras</title>
-    <!-- police homepage -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+
+<?php 
+    //vérifier qu'une session existe bien et renvoyer au formulaire de connexion dans le cas contraire
+    session_start();
+    require_once('config.php');
+    if(!isset($_SESSION["nom"])){
+    header("Location: login.php");
+    exit(); 
+  } 
+  ?>
+
+
+
     <header>
         <ul class="navbar">
             <li><a href="https://matthieugras.com/" target="_blank" rel="nofollow"><img id="logo" src="images/logo.png" alt="logo Matthieu Gras"></a></li>
@@ -44,6 +58,7 @@
         </ul>
     </div>
     <span class="vertical"></span>
+    
     <div>
         <ul class="image">
             <li> <a class="photo1"> <img src="images/phototest.png" alt=""></a> </li>

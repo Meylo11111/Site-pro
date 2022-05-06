@@ -19,11 +19,12 @@ if (isset($_POST['nom'])){
 
   if (mysqli_num_rows($result) == 1) {
     $user = mysqli_fetch_assoc($result);
+   
     // vérifier si l'utilisateur est un administrateur ou un utilisateur
     if ($user['type'] == 'admin') {
       header('location: Backoffice.php');      
     }else{
-      header('location: compte.html');
+      header('location: compte.php');
     }
   }else{
     $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";

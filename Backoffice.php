@@ -8,10 +8,8 @@
 </head>
 <body>
 <?php
-                    // Include config file
                     require_once "config.php";
                     
-                    // Attempt select query execution
                     $sql = "SELECT * FROM utilisateurs";
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){
@@ -41,7 +39,6 @@
                                 }
                                 echo "</tbody>";                            
                             echo "</table>";
-                            // Free result set
                             mysqli_free_result($result);
                         } else{
                             echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
@@ -50,7 +47,7 @@
                         echo "Oops! Something went wrong. Please try again later.";
                     }
  
-                    // Close connection
+                    // Fermer la connexion
                     mysqli_close($link);
                     ?>
                     <a href="Create.php">Create</a>
