@@ -1,14 +1,11 @@
-
 ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding-bottom: 27px;
-  padding-top: 27px;
   overflow: hidden;
   background-color: white;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 
 li {
@@ -17,13 +14,17 @@ li {
 }
 
 li a {
+  
   font-family: 'Didact Gothic', sans-serif;
   display: block;
   color: black;
   text-align: bottom;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 40px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+
  
   /* font-weight: bold; */
 }
@@ -31,23 +32,42 @@ li a {
 li a:hover {
   font-weight: bold;
   text-align: bottom;
+  font-weight: bold;
 }
 
 img#logo{
-  width : 50px;
-  height : 50px;
-  
-
+  width: 183px;
+  height: 118px;
+  padding-left: 50px;
 }
-  img#home{
-    width:2200px;
-    height: 814px;
+
+img#home{
+    width:1920px;
+    height: 883px;
+    margin-left: 0%;
 }
 
 img#Panier{
   width : 41px;
   height : 49px;
 }
+img#login{
+  width : 43px;
+  height : 51px;
+}
+
+.contenant {
+  position: relative;
+  /* text-align: center; */
+  color: white;
+}
+
+
+img#Panier{
+  width : 41px;
+  height : 49px;
+}
+
 img#login{
   width : 43px;
   height : 51px;
@@ -126,7 +146,7 @@ img#login{
   .button{
     background-color: #E89676;
     color: white;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(58, 58, 58, 0.25);
     border: none;
     padding: 15px;
     text-align: center;

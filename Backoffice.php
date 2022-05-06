@@ -8,10 +8,8 @@
 </head>
 <body>
 <?php
-                    // Include config file
                     require_once "config.php";
                     
-                    // Attempt select query execution
                     $sql = "SELECT * FROM utilisateurs";
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){
@@ -19,19 +17,22 @@
                                 echo "<thead>";
                                     echo "<tr>";
                                         echo "<th>#</th>";
-                                        echo "<th>Name</th>";
-                                        echo "<th>Address</th>";
-                                        echo "<th>Salary</th>";
-                                        echo "<th>Action</th>";
+                                        echo "<th>nom</th>";
+                                        echo "<th>email</th>";
+                                        echo "<th>type</th>";
+                                        echo "<th>password</th>";
+                                        echo "<th>img</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
                                         echo "<td>" . $row['ID'] . "</td>";
-                                        echo "<td>" . $row['Identifiant'] . "</td>";
-                                        echo "<td>" . $row['Mot de Passe'] . "</td>";
-                                        echo "<td>" . $row['Statut'] . "</td>";
+                                        echo "<td>" . $row['nom'] . "</td>";
+                                        echo "<td>" . $row['email'] . "</td>";
+                                        echo "<td>" . $row['type'] . "</td>";
+                                        echo "<td>" . $row['password'] . "</td>";
+                                        echo "<td>" . $row['img'] . "</td>";
                                         echo "<td>";
                                             echo '<a href="read.php?id='. $row['id'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
                                             echo '<a href="update.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
@@ -41,7 +42,6 @@
                                 }
                                 echo "</tbody>";                            
                             echo "</table>";
-                            // Free result set
                             mysqli_free_result($result);
                         } else{
                             echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
@@ -50,7 +50,7 @@
                         echo "Oops! Something went wrong. Please try again later.";
                     }
  
-                    // Close connection
+                    // Fermer la connexion
                     mysqli_close($link);
                     ?>
                     <a href="Create.php">Create</a>

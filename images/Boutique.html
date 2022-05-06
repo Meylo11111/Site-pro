@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/Site-pro/boutique.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Boutique_files/reset.css">
+    <link rel="stylesheet" href="./Boutique_files/boutique.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Boutique_files/css2" rel="stylesheet">
+    <title>Boutique</title>
+</head>
+<body>
+
+    <header>
+        <ul class="ulu">
+            <li><a href="https://matthieugras.com/" target="_blank" rel="nofollow"><img id="logo" src="./Boutique_files/logo.png" alt="logo Matthieu Gras"></a></li>
+            <li><a class="active navh" href="http://127.0.0.1:5500/Site-pro/site.html">acceuil</a></li>
+            <li><a class="navh" href="http://127.0.0.1:5500/Site-pro/slideshow.html">portfolio</a></li>
+            <li><a class="navh" href="http://127.0.0.1:5500/Site-pro/prestation.html">prestation</a></li>
+            <li><a class="navh" href="http://127.0.0.1:5500/Site-pro/boutique.html">boutique</a></li>
+            <li><a class="navh" href="http://127.0.0.1:5500/Site-pro/contact.html">contact</a></li>
+            <li><a class="navh" href="http://127.0.0.1:5500/Site-pro/boutique.html#panier"><img id="Panier" src="./Boutique_files/shopping-bag.png" alt="Panier de shopping"></a></li>
+            <li><a class="navh" href="http://127.0.0.1:5500/Site-pro/boutique.html#compte"><img id="login" src="./Boutique_files/compte.png" alt="Compte"></a></li>
+        </ul>
+    </header>
+
+    <div class="tout">
+            <ul class="menu" style="gap: 10px;">
+                <li><a class="navd" href="http://127.0.0.1:5500/Site-pro/boutique.html">Tous</a></li>
+                <li><a class="navd" href="http://127.0.0.1:5500/Site-pro/boutique.html">Tirages</a></li>
+                <li><a class="navd" href="http://127.0.0.1:5500/Site-pro/boutique.html">Lightroom</a></li>
+                <li><a class="navd" href="http://127.0.0.1:5500/Site-pro/boutique.html">Prestations</a></li>
+            </ul>
+
+        <div class="bout">
+            <div class="card">
+            <img class="image" src="./Boutique_files/boutique.png" alt="">
+            <h1 class="t1">Peau de printemps</h1>
+            <p class="d1">30 x 40</p>
+            <p class="d1">55.00€</p>
+            </div>
+            <div class="card">
+            <img class="image" src="./Boutique_files/boutique2.png" alt="">
+            <h1 class="t1">Couverture solaire</h1>
+            <p class="d1">30 x 40</p>
+            <p class="d1">55.00€</p>
+            </div>
+            <div class="card">
+            <img class="image" src="./Boutique_files/boutique3.png" alt="">
+            <h1 class="t1">Matin frais</h1>
+            <p class="d1">30 x 40</p>
+            <p class="d1">55.00€</p>
+            </div>
+            <div class="card">
+            <img class="image" src="./Boutique_files/boutique.png" alt="">
+            <h1 class="t1">Peau de printemps</h1>
+            <p class="d1">30 x 40</p>
+            <p class="d1">55.00€</p>
+            </div>
+            <div class="card">
+            <img class="image" src="./Boutique_files/boutique2.png" alt="">
+            <h1 class="t1">Couverture solaire</h1>
+            <p class="d1">30 x 40</p>
+            <p class="d1">55.00€</p>
+            </div>
+            <div class="card">
+            <img class="image" src="./Boutique_files/boutique3.png" alt="">
+            <h1 class="t1">Matin frais</h1>
+            <p class="d1">30 x 40</p>
+            <p class="d1">55.00€</p>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
