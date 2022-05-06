@@ -91,7 +91,7 @@ color: #000000;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 30px;
-  max-width: 1400px;
+  max-width: 80%;
 
 
 }
