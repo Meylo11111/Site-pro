@@ -115,10 +115,6 @@ color: #000000;
 
 }
 
-.card{
- 
-}
-
 .tout{
     display: flex;
     align-content: flex-start;
@@ -156,11 +152,7 @@ color: #000000;
     font-size: 25px;
     flex-direction: column;
     color: black;
-    text-decoration: none;
-   
-
-   
-   
+    text-decoration: none;   
 }
 
 .image{
