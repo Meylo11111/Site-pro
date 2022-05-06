@@ -300,6 +300,7 @@ ul {
   padding-top: 27px;
   overflow: hidden;
   background-color: white;
+  text-transform: uppercase;
 }
 
 li {

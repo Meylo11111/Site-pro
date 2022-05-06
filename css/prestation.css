@@ -8,6 +8,7 @@ ul {
   padding-top: 27px;
   overflow: hidden;
   background-color: white;
+  text-transform: uppercase;
 }
 
 li {
@@ -28,7 +29,7 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(143, 143, 143);
+  font-weight: bold;
   text-align: bottom;
 }
 
